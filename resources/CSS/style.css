@@ -282,6 +282,8 @@ iframe{
     margin: auto 0;
 }
 
+
+
 @media only screen and (max-width: 890px){
     .right-box{
         display: none;

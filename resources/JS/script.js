@@ -12,6 +12,7 @@ const restoreBtn = document.getElementById('restore');
 const camera = document.getElementById('camera');
 const marsBtn = document.getElementById('martian')
 const marsImg = document.getElementById('mars_img');
+let hidden = false;
 
 const getApd = async () =>{
 
@@ -55,6 +56,7 @@ cancelBtn.addEventListener('click',()=>{
     rightBox.style.display = 'None';
     main.style.display = 'block';
     restoreBtn.style.display = 'block';
+    hidden = true;
 })
 
 getApd();
@@ -66,6 +68,27 @@ restoreBtn.addEventListener('click',()=>{
     rightBox.style.display = 'Block';
     main.style.display = 'Grid';
     event.target.style.display = 'None';
+    hidden = false;
 })
 
 marsBtn.addEventListener('click',getMars);
+
+window.onresize = ()=>{
+    
+    if (event.target.innerWidth > 890){
+        rightBox.style = '';
+        if (hidden){
+            rightBox.style.display = 'None';
+            restoreBtn.style.display = 'Block';
+            main.style.display='block';
+        }else{
+            main.style.display='grid';
+        }
+        
+
+    }else{
+        rightBox.style.display = 'None';
+        restoreBtn.style.display = 'None';
+        main.style.display='block';
+    }
+}
