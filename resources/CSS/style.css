@@ -6,6 +6,7 @@
 
 html{
     font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 header{
@@ -80,42 +81,50 @@ header img{
 }
 
 .button{
+    display: flex;
     color: black;
-    min-height: 60px;
-    width: 200px;
+    height: 70px;
+    max-width: 340px;
     text-align: center;
-    padding: 12px;
     border-radius: 7px;
-    background-color: #E5E5E5;
+    background-color: white;
     border:4px solid black;
     cursor: pointer;
-
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    padding: 0 10px;
 }
+
+
 
 .button:hover{
     border-color: #fcbf49;
+    
 }
 .left-box .button{
     margin: 30px auto;
+    z-index: 1;
     
 }
 .display img{
     display: none;
-    width: auto;
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    max-height: 600px;
+    max-width: 800px;
 }
 
 #apd_info{
     display: none;
     height: auto;
-    background-color: #fff;
     color: black;
     width: 100%;
     margin: 20px auto;
     padding: 20px;
     text-align: justify;
+    max-width: 800px;
 }
 .right-box{
     grid-column: 2/3;
@@ -133,6 +142,7 @@ header img{
 
 #restore{
     cursor: pointer;
+    z-index: 10;
 }
 
 

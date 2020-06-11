@@ -18,7 +18,8 @@ const getApd = async () =>{
             apdImg.src = jsonResponse['url'];
             apdImg.style.display = 'Block';
             apdInfo.style.display = 'Block';
-            apdInfo.innerHTML = jsonResponse['explanation'];
+            apdInfo.innerHTML = '<h3>Description</h3><br>' + jsonResponse['explanation'];
+            
         }
     }catch(e){
         alert(error);
