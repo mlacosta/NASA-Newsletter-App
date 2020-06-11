@@ -290,3 +290,23 @@ iframe{
         display: block;
     }
 }
+
+@media only screen and (max-width: 520px){
+    .author{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    .button{
+        height: 80px;
+    }
+
+    .mars-container{
+        display: block;
+    }
+    .martian-info{
+        margin: 20px 0;
+    }
+}
