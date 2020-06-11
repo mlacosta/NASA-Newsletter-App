@@ -87,7 +87,7 @@ header img{
     max-width: 340px;
     text-align: center;
     border-radius: 7px;
-    background-color: white;
+    background-color: transparent;
     border:4px solid black;
     cursor: pointer;
     font-size: 1.2rem;
@@ -125,6 +125,8 @@ header img{
     padding: 20px;
     text-align: justify;
     max-width: 800px;
+    font-weight: 300;
+    line-height: 1.8;
 }
 .right-box{
     grid-column: 2/3;
