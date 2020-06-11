@@ -16,21 +16,57 @@ header{
     z-index: 10;
 }
 
+header img{
+    height: 100%;
+    margin: auto 40px;
+    padding: 10px 0;
+}
 
+/*ScrollBar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(29, 29, 29); 
+  }
 .main{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     height: 100vh;
     /*position: relative;*/
-    top:80px;
     padding-top: 80px;
 }
 
 .left-box{
+    position: relative;
     grid-column: 1/2;
     background-color: #E5E5E5;
-    overflow: hidden;
+    overflow-x: hidden; 
+    overflow-y: scroll; 
     height: 100%;
+}
+
+#restore{
+    display: none;
+    height: 30px;
+    margin: 30px;
+    position: absolute;
+    right: 0;
 }
 
 .display{
@@ -40,6 +76,7 @@ header{
     display: block;
     position: relative;
     top: 30px;
+    padding: 0 10%;
 }
 
 .button{
@@ -63,22 +100,45 @@ header{
     
 }
 .display img{
-    display: block;
-    max-height: 400px;
+    display: none;
     width: auto;
     height: auto;
     margin: 0 auto;
+    max-height: 600px;
 }
 
-
+#apd_info{
+    display: none;
+    height: auto;
+    background-color: #fff;
+    color: black;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: justify;
+}
 .right-box{
     grid-column: 2/3;
     background-color: #14213d;
     height: 100%;
 }
 
+/*Animation Buttons*/
+#cancel{
+    height: 23px;
+    margin: 20px 30px;
+    cursor: pointer;
+    color: #fcbf49;
+}
+
+#restore{
+    cursor: pointer;
+}
+
+
 .footer{
-    height: 60px;
+    visibility: hidden;
+    height: 0;
     background-color: #000;
     color:#E5E5E5;
     display:flex;
