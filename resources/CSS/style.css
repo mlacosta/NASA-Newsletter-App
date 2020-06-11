@@ -91,10 +91,12 @@ header h3, h4{
 }
 
 .display{
-    min-height: 700px;
+    min-height: 100vh;
     width: 100%;
     color: palegoldenrod;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     top: 30px;
     padding: 0 10%;
@@ -105,7 +107,7 @@ header h3, h4{
     display: flex;
     color: black;
     height: 70px;
-    max-width: 340px;
+    max-width: 280px;
     text-align: center;
     border-radius: 7px;
     background-color: transparent;
@@ -153,6 +155,12 @@ header h3, h4{
 .martian-info{
     display: flex;
     justify-content: center;
+
+}
+
+.martian-info select{
+    max-width: 280px;
+    margin: 20px 0;
 }
 
 #camera{
@@ -163,14 +171,37 @@ header h3, h4{
     grid-column: 2/3;
     background-color: #14213d;
     height: 100%;
+    display: block;
+    overflow-y: scroll;
 }
 
 .twit-container{
     margin: 0 auto;
     width: 70%;
-    max-height: 660px;
+    max-height: 300px;
     overflow-y: scroll;
+    transition: 1s;
+}
 
+.twit-container:hover{
+    transition: 1s;
+    max-height: 650px;
+
+}
+
+
+.twitter-timeline{
+    width: 90%;
+}
+.youtube{
+    margin: 70px auto;
+    width: 70%;
+    max-height: 600px;
+    
+}
+
+iframe{
+    width: 100%;
 }
 
 /*Animation Buttons*/
