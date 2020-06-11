@@ -85,7 +85,6 @@ window.onresize = ()=>{
             main.style.display='grid';
         }
         
-
     }else{
         rightBox.style.display = 'None';
         restoreBtn.style.display = 'None';

@@ -23,6 +23,7 @@ header img{
     margin: auto 40px;
     padding: 10px 0;
     width: auto;
+    max-width: 80px;
 }
 
 header h3{
