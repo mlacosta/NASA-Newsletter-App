@@ -25,8 +25,13 @@ header img{
     width: auto;
 }
 
-header h3, h4{
+header h3{
     margin: auto 0;
+    color: white;
+}
+
+header h4{
+
     color: white;
 }
 
@@ -36,9 +41,32 @@ header h3, h4{
     right: 20px;
     height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
+.social-media{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 10px 40px;
+}
+
+.social-media a{
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: #E5E5E5;
+    transition: .5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.social-media a:hover{
+
+    color: black;
+
+
+}
 #home{
     width: 150px;
 }
@@ -91,7 +119,7 @@ header h3, h4{
 }
 
 .display{
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     color: palegoldenrod;
     display: flex;
