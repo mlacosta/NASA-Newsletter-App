@@ -7,6 +7,8 @@ const cancelBtn = document.getElementById('cancel');
 const rightBox = document.getElementById('right-box');
 const main = document.querySelector('.main');
 const restoreBtn = document.getElementById('restore');
+const camera = document.getElementById('camera');
+const marsBtn = document.getElementById('martian')
 
 const getApd = async () =>{
 
@@ -24,6 +26,10 @@ const getApd = async () =>{
     }catch(e){
         alert(error);
     }
+    
+}
+
+const getMars = async ()=>{
     
 }
 

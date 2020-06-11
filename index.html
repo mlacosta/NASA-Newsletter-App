@@ -11,7 +11,11 @@
 </head>
 <body>
     <header>
-        <a href="https://www.nasa.gov/" target="_blank"><img title='Visit NASA website' src="./resources/img/nasa_logo.png" alt="" class="logo"></a> 
+        <a id ="home" href="https://www.nasa.gov/" target="_blank"><img title='Visit NASA website' src="./resources/img/nasa_logo.png" alt="" class="logo"></a> 
+        <h3>NASA Newsletter</h3>
+        <div class="author">
+            <h4>Built by Mariano L. Acosta</h4>
+        </div>
     </header>
     <section class="main">
         <div class="left-box">
@@ -20,7 +24,22 @@
                 <img id='apd_img' src="./resources/img/placeholder_01.jpg" alt="" class="apod">
                 <div id="apd_info"></div>
                 <div id ="apd" class="button">Get the Astronomy Picture of the Day!</div>
+                <div id ="martian" class="button">View the Martian Rover Cameras!</div>
+                <div class="martian-info">
+                    <select id="camera" name="" >
+                        <option value="FHAZ">Front Hazard Avoidance Camera</option>
+                        <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+                        <option value="MAST">Mast Camera</option>
+                        <option value="CHEMCAM">Chemistry and Camera Complex</option>
+                        <option value="MAHLI">Mars Hand Lens Imager</option>
+                        <option value="MARDI">Mars Descent Imager</option>
+                        <option value="NAVCAM">Navigation Camera</option>
+                        <option value="PANCAM">Panoramic Camera</option>
+                        <option value="MINITES">Miniature Thermal Emission Spectrometer (Mini-TES)</option>
+                    </select>
+                </div>
             </div>
+            
         </div>
         <div id ='right-box'class="right-box">
             <img id='cancel' src="./resources/img/cancel.png" alt="">
